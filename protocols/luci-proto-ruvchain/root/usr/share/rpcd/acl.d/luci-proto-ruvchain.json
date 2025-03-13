@@ -1,0 +1,11 @@
+{
+	"luci-proto-ruvchain": {
+		"description": "Grant access to LuCI Ruvchain procedures",
+		"write": {
+			"ubus": {
+				"luci.ruvchain": [ "generateKeyPair", "getPeers" ],
+				"luci.ruvchain-connector": [ "isInstalled", "validateConfig" ]
+			}
+		}
+	}
+}
